@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1, initial-scale=1.0">
+  <title>Portfolio | Mohamed Shabil</title>
+  <!--Animation css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!----css---->
+  <link rel="stylesheet" href="style.css">
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Bootstrap Icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <section id="sec">
+    <!-- header for Desktop -->
+    <header class="header" id="Header">
+      <div class="portfolio">
+        <a href="#">Shabil</a>
+      </div>
+      <div class="nav-item">
+        <ul>
+          <li><a href="#Home" class="cool-link">Home</a></li>
+          <li><a href="#About" class="cool-link">About</a></li>
+          <li><a href="#skills" class="cool-link">Skill</a></li>
+          <li><a href="#service" class="cool-link">Services</a></li>
+          <li><a href="#contact" class="cool-link">Contact</a></li>
+          <li><a class="cool-link" onclick="theme()"><i class="bi bi-moon" id="nav-top-icon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- header for Mobile -->
+    <section>
+      <div class="grid-container" id="grid-container" style="grid-auto-flow: row;">
+        <div class="item1"> <a href="#Home" class="nav-link"><i class="bi bi-house"><br></i>Home</a></div>
+        <div class="item2"> <a href="#About" class="nav-link"><i class="bi bi-person"><br></i>About</a></div>
+        <div class="item3"> <a href="#skills" class="nav-link"><i class="bi bi-file-earmark"><br></i>Skills</a></div>
+        <div class="item5"> <a href="#service" class="nav-link"><i class="bi bi-briefcase"><br></i>Services</a></div>
+        <div class="item7"> <a href="#contact" class="nav-link"><i class="bi bi-phone"><br></i>Contact</a></div>
+        <div class="item6"> <a class="nav-link" onclick="theme()"><i class="bi bi-moon" id="dark-theme-icon"></i></a>
+        </div>
+        <div class="item8"></div>
+        <div class="close-btn-div"><a class="close-btn" onclick="toggle()"><i class="close bi bi-x"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom-Nav -->
+    <section class="bottom-nav">
+      <div class="name"><a href="#">Shabil</a></div>
+      <div class="app-div"><a class="app" id="app" onclick="toggle()"><i class="bi bi-grid"></i></a></i></div>
+    </section>
+
+    <!-- Hero-Section -->
+    <section id="Home" class="hero-Section">
+      <div class="social-media-icon">
+        <ul class="sci">
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="text-box">
+        <div class="txt">
+          <h2 class="intro-txt">Hello, I'am Shabil</h2>
+          <h4 class="profession"><span class="type"></span></h4>
+          <p class="sub-txt">I am a 18 year old boy , and working as a freelancer and I have High level experince in web
+            design and development knowledge producing quality
+            work</p>
+          <a href="#" class="contact-btn">Contact Me <span class="space"></span><i class="fa fa-paper-plane-o"></i></a>
+        </div>
+      </div>
+      <div class="img-box">
+        <svg class="blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <mask id="mask0" mask-type="alpha">
+            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+          </mask>
+          <g mask="url(#mask0)">
+            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+            <image class="home-blob-img" x='12' y='18' xlink:href="/Public/Profile.png" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="About" class="About container">
+      <h2 class="sec-head">About Me</h2>
+      <p class='sec-intro'>Let me introduce myself</p>
+      <div class="about-data row">
+        <div class="img-about column">
+          <img class="hero-about" src="Public/DSC07286-01croped.jpg" alt="">
+        </div>
+        <div class="about-txt-data column">
+          <p class="about-txt">Web developer, with extensive knowledge and years of experience, working in web
+            technologies and Ui / Ux design, delivering quality work.</p>
+          <div class="projects">
+            <ul class="project-list">
+              <li>
+                <h1 class="no">01</h1>
+                <p class="discription">Years of <br> experience</p>
+              </li>
+              <li>
+                <h1 class="no">10+</h1>
+                <p class="discription">Completed <br> project</p>
+              </li>
+
+
+            </ul>
+            <a href="#" class="cv-button">Download CV <i class="bi bi-download down-icon"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    <!-- Skill bars -->
+    <section class="skills" id="skills">
+      <div>
+        <h2 class="skill-head">Skills</h2>
+        <p class='skill-intro'>My technical level</p>
+      </div>
+
+      <div class="skill-container grid ">
+        <div>
+          <!-- Skill-1 -->
+          <div class="skill-content ">
+            <div class="skill-header " onclick="skills_frontend()">
+              <i class="bi bi-code-slash skill-icon"></i>
+              <div>
+                <h1 class="skill-title">Frontend Development</h1>
+              </div>
+              <i class="bi bi-chevron-compact-down skill-arrow" id="skill-arrow"></i>
+            </div>
+
+            <div class="skill-list-open grid" id="skill-front">
+
+              <div class="skill-data">
+                <div class="skill-titles">
+                  <h3 class="skill-name">HTML</h3>
+                  <span class="skill-number">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-percentage skill-html"></div>
+                </div>
+              </div>
+
+              <div class="skill-data">
+                <div class="skill-titles">
+                  <h3 class="skill-name">CSS</h3>
+                  <span class="skill-number">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-percentage skill-css"></div>
+                </div>
+              </div>
+
+              <div class="skill-data">
+                <div class="skill-titles">
+                  <h3 class="skill-name">JavaScript</h3>
+                  <span class="skill-number">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-percentage skill-javscript"></div>
+                </div>
+              </div>
+
+              <div class="skill-data">
+                <div class="skill-titles">
+                  <h3 class="skill-name">React</h3>
+                  <span class="skill-number">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-percentage skill-react"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Skill-2 -->
+          <div class="skill-content">
+            <div class="skill-header" onclick="skills_backend()">
+              <i class="bi bi-hdd-network skill-icon"></i>
+              <div>
+                <h1 class="skill-title">Backend Development</h1>
+              </div>
+              <i class="bi bi-chevron-compact-down skill-arrow" id="skill-arrow2"></i>
+            </div>
+
+            <div class="skill-list grid " id="skill-back">
+
+              <div class="skill-data">
+                <div class="skill-titles">
+                  <h3 class="skill-name">Fire Base</h3>
+                  <span class="skill-number">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-percentage skill-firebase"></div>
+                </div>
+              </div>
+
+              <div class="skill-data">
+                <div class="skill-titles">
+                  <h3 class="skill-name">Node Js</h3>
+                  <span class="skill-number">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-percentage skill-node"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- skill-3 -->
+          <div class="Frame-work skill-content">
+            <div class="skill-header" onclick="skills_frame()">
+              <i class="bi bi-layout-text-window-reverse skill-icon"></i>
+              <div>
+                <h1 class="skill-title">Frame work</h1>
+              </div>
+              <i class="bi bi-chevron-compact-up skill-arrow skill-arrow-animation" id="skill-arrow3"></i>
+            </div>
+
+            <div class="skill-list grid " id="skill-frame">
+
+              <div class="skill-data">
+                <div class="skill-titles">
+                  <h3 class="skill-name">Tailwind</h3>
+                  <span class="skill-number">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-percentage skill-tail"></div>
+                </div>
+              </div>
+
+              <div class="skill-data">
+                <div class="skill-titles">
+                  <h3 class="skill-name">Bootstrap</h3>
+                  <span class="skill-number">89%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-percentage skill-boot"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="service">
+      <div class="service-container">
+
+        <div class="main-txt" id="service">
+          <h3 class="service-main-title">Services</h3>
+          <p class="service-sub-title">What i offer</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-icon"><i class="bi bi-grid-1x2"></i></div>
+            <div class="card-txt">
+              <h4 class="card-main-txt">Web<br>Designing</h4>
+              <a onclick="designPopup()">View More<i class="bi bi-arrow-right-short"></i></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon"><i class="bi bi-grid-1x2"></i></div>
+            <div class="card-txt">
+              <h4 class="card-main-txt">Web <br>Development</h4>
+              <a href="">View More<i class="bi bi-arrow-right-short"></i></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon"><i class="bi bi-grid-1x2"></i></div>
+            <div class="card-txt">
+              <h4 class="card-main-txt">Wordpress<br>Development</h4>
+              <a href="">View More<i class="bi bi-arrow-right-short"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me -->
+
+    <section class="contact" id="contact">
+      <div class="contact-main-txt">
+        <h3 class="contact-main-title">Contact Me</h3>
+        <p>Let's Work together</p>
+      </div>
+      <div class="contact-container">
+        <div class="map"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12058.475263355547!2d76.04283172318836!3d10.94247649606652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7b5cd74d00c4d%3A0x4fa7f6834d8934f7!2sKadampuzha%2C%20Kerala%20676553!5e1!3m2!1sen!2sin!4v1624246248913!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="form">
+          <div class="form-container">
+            <form action="" method="post" autocomplete="off" name="google-sheet">
+              <input type="text" id="name" name="name" placeholder="Name" class="contact-input" required>
+              <input type="email" id="email" name="email" placeholder="Email" class="contact-input" required>
+              <textarea name="Message" id="Message" cols="30" rows="5" placeholder="Message ..." class="contact-txtarea"
+                required></textarea>
+              <input type="submit" value="submit" name="submit" onclick="sendmail()" class="sbmt-btn">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </section>
+  <script src="typed.js"></script>
+  <script src="app.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbznG-7FFYQZoaIrNjDNRuhDTuYbsqTJ-RH6SB5OBdPmsP2pZlY46AD3ocHQ5HZ_A0I/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have successfully submitted."))
+                .catch(error => console.error('Error!', error.message))
+            })
+
+    var typed = new Typed('.type', {
+      strings: ['Full stack developer',
+        'Web Designer',
+        'Freelancer',
+        'Wordpress Developer'],
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true,
+    });
+  </script>
+</body>
