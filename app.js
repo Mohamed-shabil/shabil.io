@@ -47,4 +47,11 @@ window.addEventListener('scroll',function(){
     header.classList.toggle('shadow',window.scrollY > 0)
 })
 
+function webdesign() {
+    const design =document.getElementById('Popup')
+    design.classList.toggle('Popup')
+    const blur = document.getElementById('sec')
+    blur.classList.toggle('blur')
+}
+
 

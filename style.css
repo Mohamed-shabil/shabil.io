@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -9,7 +10,8 @@
 /* width */
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
+    border-radius: 20px;
 }
 
 ::-webkit-scrollbar-track {
@@ -41,9 +43,10 @@ body {
     color: #fff !important;
     background-color: rgba(17, 24, 39, 1) !important;
 }
-
-
-
+.blur{
+    background-color: rgba(51, 51, 51, 0.432);
+    z-index: 100;
+}
 .header {
     width: 100%;
     height: 50px;
@@ -118,15 +121,6 @@ body {
 }
 .dark .header .nav-item ul li a{
     color: #fff;
-}
-.sun{
-    display: block;
-}
-.moon{
-    display: none;
-}
-.logo {
-    font-size: 20px;
 }
 
 .cool-link {
@@ -685,6 +679,10 @@ body {
         margin-top: 0 !important;
         height: auto !important;
     }
+    .footer-txt{
+        padding: 0 20px !important;   
+        margin-bottom: 50px;
+    }
 }
 
 @media only screen and (min-width:768px) {
@@ -1002,6 +1000,7 @@ body {
     margin-top: 10px;
     color: #6e57e0;
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -1009,9 +1008,80 @@ body {
     list-style-type: none;
 }
 
-.popup .icon-close {
-    float: right;
+.pop{
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.5s;
 }
+.pop.Popup{
+    transition: 0.5s;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    padding: 0 20px;
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    color: #555;
+    border-radius:15px;
+}
+
+.Head-title{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.ser-svg{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.head-span{
+    width: 100%;
+    float: left;
+}
+.close-icon{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close-icon .cls{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ser-ul{
+    list-style: none;
+}
+.ser-ul li{
+    margin-bottom: 10px;
+}
+.spc{
+    font-weight: 300;
+    font-size: 15px;
+}
+.Ser-list{
+    padding: 0 30px;
+}
+
 
 
 /* contact me */
@@ -1117,3 +1187,73 @@ body {
 .sbmt-btn:hover{
     background: #5743ca;
 }
+
+/*footer*/
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    transition: 0.5s;
+}
+.dark footer{
+    background: #1a2438;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+.social-media ul{
+    list-style-type: none;
+    display: inherit;
+    margin: 0 20px;
+}
+.social-media ul li{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.social-media ul li a{
+    color: #6e57e0;
+    font-size: 20px;
+
+}
+.line{
+    margin-top: 10px;
+    width: 70%;
+    height: 1px;
+    margin: 0 auto;
+    color:#6e57e0;
+}
+.footer-txt{
+    padding: 0 150px;
+    width: 100%;
+    height: calc(10vh + 20px);
+    text-align: center;
+    color: #666;
+}
+.follow{
+    padding:10px 0;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 12px;
+    color: #666;
+}
+.insta-id{
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 2px;
+}
+.copy{
+    padding: 20px 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 10px;
+}
+/*Service Popup*/

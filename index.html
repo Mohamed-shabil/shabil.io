@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=1, initial-scale=1.0">
-  <title>Portfolio | Mohamed Shabil</title>
+  <title>Mohamed Shabil</title>
   <!--Animation css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!----css---->
@@ -45,7 +45,7 @@
         <div class="item3"> <a href="#skills" class="nav-link"><i class="bi bi-file-earmark"><br></i>Skills</a></div>
         <div class="item5"> <a href="#service" class="nav-link"><i class="bi bi-briefcase"><br></i>Services</a></div>
         <div class="item7"> <a href="#contact" class="nav-link"><i class="bi bi-phone"><br></i>Contact</a></div>
-        <div class="item6"> <a class="nav-link" onclick="theme()"><i class="bi bi-moon" id="dark-theme-icon"></i></a>
+        <div class="item6"> <a class="nav-link" onclick="theme()"><i class="bi bi-moon" id="dark-theme-icon"><br></i>Theme</a>
         </div>
         <div class="item8"></div>
         <div class="close-btn-div"><a class="close-btn" onclick="toggle()"><i class="close bi bi-x"></i></a>
@@ -92,7 +92,7 @@
                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-            <image class="home-blob-img" x='12' y='18' xlink:href="/Public/Profile.png" />
+            <image class="home-blob-img" x='12' y='18' xlink:href="Public/Profile.png" />
           </g>
         </svg>
       </div>
@@ -274,9 +274,9 @@
     </section>
 
 
+    <!-- Service -->
 
-
-    <section class="service">
+    <section class="service" id="sevice-con">
       <div class="service-container">
 
         <div class="main-txt" id="service">
@@ -288,26 +288,56 @@
             <div class="card-icon"><i class="bi bi-grid-1x2"></i></div>
             <div class="card-txt">
               <h4 class="card-main-txt">Web<br>Designing</h4>
-              <a onclick="designPopup()">View More<i class="bi bi-arrow-right-short"></i></a>
+              <a onclick="webdesign()">View More<i class="bi bi-arrow-right-short"></i></a>
             </div>
           </div>
 
           <div class="card">
-            <div class="card-icon"><i class="bi bi-grid-1x2"></i></div>
+            <div class="card-icon"><i class="bi bi-hdd-rack"></i></div>
             <div class="card-txt">
               <h4 class="card-main-txt">Web <br>Development</h4>
-              <a href="">View More<i class="bi bi-arrow-right-short"></i></a>
+              <a onclick="webdesign()">View More<i class="bi bi-arrow-right-short"></i></a>
             </div>
           </div>
 
           <div class="card">
-            <div class="card-icon"><i class="bi bi-grid-1x2"></i></div>
+            <div class="card-icon"><i class="bi bi-window-sidebar"></i></div>
             <div class="card-txt">
               <h4 class="card-main-txt">Wordpress<br>Development</h4>
-              <a href="">View More<i class="bi bi-arrow-right-short"></i></a>
+              <a onclick="webdesign()">View More<i class="bi bi-arrow-right-short"></i></a>
             </div>
           </div>
         </div>
+
+        <section class="pop" id="Popup">
+          <div class="ser-svg">
+            <img src="Public/web-design (1).png" alt="" srcset="">
+          </div>
+          <div class="Head-title">
+            <span class="head-span">
+              <H2 class="head">Web designing</H2>
+            </span>
+          </div>
+          <div class="Ser-List">
+            <ul class="ser-ul">
+              <li>
+                <p class="spc"><i class="bi bi-check2-circle"></i> Responsive and Minimilistic Design</p>
+              </li>
+              <li>
+                <p class="spc"><i class="bi bi-check2-circle"></i> Using the Best and Latest Technologies</p>
+              </li>
+              <li>
+                <p class="spc"><i class="bi bi-check2-circle"></i> Fast And Secure Loading</p>
+              </li>
+              <li>
+                <p class="spc"><i class="bi bi-check2-circle"></i> SEO Friendly Page</p>
+              </li>
+            </ul>
+            <span class="close-icon"><i class="bi bi-x-circle cls" onclick="webdesign()"></i></span>
+          </div>
+
+        </section>
+
       </div>
     </section>
 
@@ -338,21 +368,39 @@
     </section>
 
 
+    <!-- Footer -->
+    <footer>
+      <div class="social-media">
+        <ul>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-txt">
+        <p class="follow">Follow Along On Instagram | <span class="insta-id">@mohamed_shabil_</span> <br></p>
+        <hr class="line">
+        <p class="copy">Mohamed Shabil © Copyright 2021. Design by Me</p>
+      </div>
+    </footer>
 
   </section>
   <script src="typed.js"></script>
   <script src="app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbznG-7FFYQZoaIrNjDNRuhDTuYbsqTJ-RH6SB5OBdPmsP2pZlY46AD3ocHQ5HZ_A0I/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("You have successfully submitted."))
-                .catch(error => console.error('Error!', error.message))
-            })
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("You have successfully submitted."))
+        .catch(error => console.error('Error!', error.message))
+    })
 
     var typed = new Typed('.type', {
       strings: ['Full stack developer',
