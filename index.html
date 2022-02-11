@@ -30,6 +30,7 @@
           <li><a href="#Home" class="cool-link">Home</a></li>
           <li><a href="#About" class="cool-link">About</a></li>
           <li><a href="#skills" class="cool-link">Skill</a></li>
+          <li><a href="#projects" class="cool-link">Projects</a></li>
           <li><a href="#service" class="cool-link">Services</a></li>
           <li><a href="#contact" class="cool-link">Contact</a></li>
           <li><a class="cool-link" onclick="theme()"><i class="bi bi-moon" id="nav-top-icon"></i></a>
@@ -43,10 +44,10 @@
         <div class="item1"> <a href="#Home" class="nav-link"><i class="bi bi-house"><br></i>Home</a></div>
         <div class="item2"> <a href="#About" class="nav-link"><i class="bi bi-person"><br></i>About</a></div>
         <div class="item3"> <a href="#skills" class="nav-link"><i class="bi bi-file-earmark"><br></i>Skills</a></div>
+        <div class="item3"> <a href="#projects" class="nav-link"><i class="bi bi-file-earmark"><br></i>Projects</a>
+        </div>
         <div class="item5"> <a href="#service" class="nav-link"><i class="bi bi-briefcase"><br></i>Services</a></div>
         <div class="item7"> <a href="#contact" class="nav-link"><i class="bi bi-phone"><br></i>Contact</a></div>
-        <div class="item6"> <a class="nav-link" onclick="theme()"><i class="bi bi-moon" id="dark-theme-icon"><br></i>Theme</a>
-        </div>
         <div class="item8"></div>
         <div class="close-btn-div"><a class="close-btn" onclick="toggle()"><i class="close bi bi-x"></i></a>
         </div>
@@ -56,7 +57,13 @@
     <!-- Bottom-Nav -->
     <section class="bottom-nav">
       <div class="name"><a href="#">Shabil</a></div>
-      <div class="app-div"><a class="app" id="app" onclick="toggle()"><i class="bi bi-grid"></i></a></i></div>
+      <div class="app-div">
+        <div class="item6">
+            <a class="nav-link" onclick="theme()">
+            <i class="bi bi-moon" id="dark-theme-icon"><br></i></a>
+        </div>
+        <a class="app" id="app" onclick="toggle()"><i class="bi bi-grid"></i></a></i>
+      </div>
     </section>
 
     <!-- Hero-Section -->
@@ -72,9 +79,7 @@
         <div class="txt">
           <h2 class="intro-txt">Hello, I'am Shabil</h2>
           <h4 class="profession"><span class="type"></span></h4>
-          <p class="sub-txt">I am a 18 year old boy , and working as a freelancer and I have High level experince in web
-            design and development knowledge producing quality
-            work</p>
+          <p class="sub-txt"><!----------------------------------------------------------------></p>
           <a href="#" class="contact-btn">Contact Me <span class="space"></span><i class="fa fa-paper-plane-o"></i></a>
         </div>
       </div>
@@ -92,7 +97,7 @@
                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-            <image class="home-blob-img" x='12' y='18' xlink:href="Public/Profile.png" />
+            <image class="home-blob-img" x='4' y='18' xlink:href="Public/Me.png" />
           </g>
         </svg>
       </div>
@@ -109,14 +114,14 @@
         <div class="about-txt-data column">
           <p class="about-txt">Web developer, with extensive knowledge and years of experience, working in web
             technologies and Ui / Ux design, delivering quality work.</p>
-          <div class="projects">
+          <div class="project">
             <ul class="project-list">
               <li>
                 <h1 class="no">01</h1>
                 <p class="discription">Years of <br> experience</p>
               </li>
               <li>
-                <h1 class="no">10+</h1>
+                <h1 class="no">05+</h1>
                 <p class="discription">Completed <br> project</p>
               </li>
 
@@ -186,7 +191,7 @@
               <div class="skill-data">
                 <div class="skill-titles">
                   <h3 class="skill-name">React</h3>
-                  <span class="skill-number">70%</span>
+                  <span class="skill-number">90%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-percentage skill-react"></div>
@@ -270,6 +275,70 @@
 
         </div>
       </div>
+      </div>
+    </section>
+
+    <!--Projects-->
+
+    <section class="projects">
+      <div class="main-txt" id="projects">
+        <h3 class="service-main-title">Projects</h3>
+      </div>
+      <div class="project-rows">
+        <div class="project-card">
+          <div class="card-media">
+            <img src="letsmeetEdited.png" class="card-image" alt="" srcset="">
+          </div>
+          <div class="project-txt">
+            <br>
+            <h3>Let's Meet</h3>
+            <a href="https://letsmeet-ms.netlify.app">View app<i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="card-media">
+            <img src="Ecommerce.PNG" class="card-image" alt="" srcset="">
+          </div>
+          <div class="project-txt">
+            <br>
+            <h3>Ecommerce</h3>
+            <a href="#">On Progress...<i class="bi bi-person-workspace"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-media">
+            <img src="Bexfolio.PNG" class="card-image" alt="" srcset="">
+          </div>
+          <div class="project-txt">
+            <br>
+            <h3>Bexfolio</h3>
+            <a href="https://playbulltraders.in">View app<i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-media">
+            <img src="Disney.PNG" class="card-image" alt="" srcset="">
+          </div>
+          <div class="project-txt">
+            <br>
+            <h3>Disney + Hotstar Clone</h3>
+            <a href="https://hotstarclone-ms.netlify.app/">View app<i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-media">
+            <img src="Ping me.PNG" class="card-image" alt="" srcset="">
+          </div>
+          <div class="project-txt">
+            <br>
+            <h3>Ping Me</h3>
+            <a href="#">View app<i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+
       </div>
     </section>
 
